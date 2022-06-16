@@ -63,7 +63,7 @@ Output:
 */
 
 export function makeSpanishLanguageArray(arr) {
-    return arr.map((animal) => ({ nombre: animal.name, tipo: animal.type}));
+    return arr.map((animal) => ({ nombre: animal.name, tipo: animal.type }));
 }
 
 /*
@@ -77,7 +77,12 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    return [];
+    return arr.map(animal => {
+        return {
+            ...animal,
+            isHungry: true,
+        };
+    });
 }
 
 /*
@@ -91,7 +96,11 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
-    return [];
+    return arr.map(animal =>
+    { return {
+        name : animal.name.toUpperCase(),
+        type : animal.type };
+    });
 }
 
 
@@ -102,7 +111,7 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return [];
+    return ;
 }
 
 /*
