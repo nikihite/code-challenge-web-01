@@ -47,7 +47,8 @@ Output:
 */
 
 export function makeReversedArrayOfTypes(arr) {
-    return [];
+    return arr.map(animal => animal.type)
+        .reverse();
 }
 
 /*
@@ -62,7 +63,7 @@ Output:
 */
 
 export function makeSpanishLanguageArray(arr) {
-    return [];
+    return arr.map((animal) => ({ nombre: animal.name, tipo: animal.type}));
 }
 
 /*
